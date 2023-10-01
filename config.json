@@ -1,12 +1,11 @@
 {
-  "webhook": "YOUR WEBHOOK URL HERE",
   "webhook_name": "Webhook",
   "webhook_avatar": "https://cdn.discordapp.com/embed/avatars/0.png",
   "message": "@everyone %IP%",
 
   "codeblock_type": "small",
 
-  "ip_ratelimit": 3,
+  "ip_ratelimit": 6,
   "reset_ratelimit_after": 10,
 
   "mc_embed_color": "FF031A",
@@ -31,5 +30,5 @@
   "file_embed_footer_text": "Rat",
   "file_embed_footer_icon": "https://bigrat.monster/media/bigrat.png",
 
-  "validate_session": true
+  "validate_session": false
 }
