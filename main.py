@@ -3,6 +3,7 @@ import json
 import time
 import os
 
+from dotenv import load_dotenv
 from discord_webhook import DiscordWebhook, DiscordEmbed
 from flask import Flask, request
 from flask_restful import Api, Resource
