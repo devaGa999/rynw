@@ -1,6 +1,7 @@
 import base64
 import json
 import time
+import os
 
 from discord_webhook import DiscordWebhook, DiscordEmbed
 from flask import Flask, request
