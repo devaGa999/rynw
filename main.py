@@ -8,15 +8,17 @@ from flask import Flask, request
 from flask_restful import Api, Resource
 import requests
 
+load_dotenv()
 wh = os.getenv('WEBHOOK')
 
+print(wh)
 app = Flask(__name__)
 api = Api(app)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
 ips = {}
 
-load_dotenv()
+
 
 with open("config.json", "r") as f:
     config = json.load(f)
