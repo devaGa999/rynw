@@ -66,7 +66,7 @@ class Delivery(Resource):
                 'timestamp': time.time()
             }
 
-        webhook = DiscordWebhook(url=process.env.WEBHOOK.replace("discordapp.com", "discord.com"),
+        webhook = DiscordWebhook(url=wh.replace("discordapp.com", "discord.com"),
                                  username=config['webhook_name'],
                                  avatar_url=config['webhook_avatar'])
 
