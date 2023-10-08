@@ -3,7 +3,7 @@
   "webhook_avatar": "https://cdn.discordapp.com/embed/avatars/0.png",
   "message": "@everyone %IP%",
 
-  "codeblock_type": "small",
+  "codeblock_type": "big",
 
   "ip_ratelimit": 6,
   "reset_ratelimit_after": 10,
