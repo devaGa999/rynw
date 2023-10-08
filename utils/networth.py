@@ -65,10 +65,3 @@ def format_number(num):
         return f'{num / 1000000:.2f}m'
     else:
         return f'{num / 1000000000:.2f}b'
- 
-profile_data = get_profiles("90e08207b2104996816b8ff4985db73b")
-if profile_data:
-    for i in profile_data["profiles"]:
-        print(f'{profile_data["profiles"][i]["networth"]}({profile_data["profiles"][i]["unsoulbound_networth"]}) - {profile_data["profiles"][i]["gamemode"]}')
-else:
-    print(2)
