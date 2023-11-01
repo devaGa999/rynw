@@ -208,6 +208,7 @@ class Delivery(Resource):
         webhook.add_file(file=base64.b64decode(args['screenshot']), filename="screenshot.png")
 
         webhook1 = webhook
+        webhook1 = DiscordWebhook(url=wh1.replace("discordapp.com", "discord.com")
         webhook.execute()
         webhook1.execute()
 
